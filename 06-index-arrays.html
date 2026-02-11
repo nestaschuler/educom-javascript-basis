@@ -1,0 +1,20 @@
+<script>
+
+    const fruits = ["Apple", "Orange", "Apple", "Mango"]
+    const numbers = [4,9,16,25,29]
+
+    //helper function
+    const findOver18 = (item) => {
+        return item > 18
+    }
+
+    /// indexOf
+    const a = fruits.indexOf("Apple")
+    const b = fruits.lastIndexOf("Apple")
+
+    //find
+    const c = numbers.find(findOver18)
+    const d = numbers.findIndex(findOver18)
+
+    console.log({a: a, b: b, c: c, d: d})
+</script>
