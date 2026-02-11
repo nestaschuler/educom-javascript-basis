@@ -1,0 +1,18 @@
+<script>
+
+    const grocery = [
+        { product: "apple", price: 5},
+        { product: "pasta", price: 5.50},
+        { product: "wine", price: 10},
+        { product: "diapers", price: 3.50}]
+  
+    let total= 0
+    grocery.forEach((value) => { 
+        console.log(`${value.product} kost €${value.price}`);
+         total += value.price;}); 
+
+    const totalBTW = total * 1.21;
+   
+    console.log(total);
+    console.log(totalBTW); 
+</script>
