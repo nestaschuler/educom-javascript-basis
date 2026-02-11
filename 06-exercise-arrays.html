@@ -1,15 +1,15 @@
 <script>
 
-    const grocery = [
+    const shoppingCart = [
         { product: "apple", price: 5},
         { product: "pasta", price: 5.50},
         { product: "wine", price: 10},
         { product: "diapers", price: 3.50}]
   
     let total= 0
-    grocery.forEach((value) => { 
-        console.log(`${value.product} kost €${value.price}`);
-         total += value.price;}); 
+    shoppingCart.forEach((item) => { 
+        console.log(`${item.product} kost €${item.price}`);
+         total += item.price;}); 
 
     const totalBTW = total * 1.21;
    
